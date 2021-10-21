@@ -31,6 +31,12 @@ export class UserBusiness {
             throw new InvalidInputError("A senha deve ser igual ou superior a 6 digitos")
         }
 
+        const userFromDB = await this.userDatabase.getUserByEmail(user.email);
+
+        if(userFromDB){
+            throw new Error(`Já existe usuário no o email ${user.email}`)
+        }
+
         const id = this.idGenerator.generate();
 
         const hashPassword = await this.hashManager.hash(user.password);

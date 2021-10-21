@@ -40,6 +40,7 @@ export class OrderDataBase extends BaseDataBase{
         FROM ${this.tableNames.orderPizza} p
         LEFT JOIN ${this.tableNames.restaurantOrder} o
         ON o.id = '${orderId}'
+        WHERE order_id = '${orderId}'
         `)
 
         return pizzas[0]

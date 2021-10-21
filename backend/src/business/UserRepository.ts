@@ -9,6 +9,6 @@ export interface UserRepository{
         role: string
         ): Promise<void>
     
-    getUserByEmail(email: string): Promise<User> 
+    getUserByEmail(email: string): Promise<User | null> 
     
 }

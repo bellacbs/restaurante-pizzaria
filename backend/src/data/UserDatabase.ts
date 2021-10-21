@@ -26,12 +26,15 @@ export class UserDatabase extends BaseDataBase implements UserRepository {
     }
   }
 
-  public async getUserByEmail(email: string): Promise<User> {
+  public async getUserByEmail(email: string): Promise<User | null> {
     const result = await this.getConnection()
       .select("*")
       .from(this.tableNames.restaurantUser)
       .where({ email });
 
+    if(result.length === 0){
+      return null
+    }
     return User.toUserModel(result[0]);
   }
 

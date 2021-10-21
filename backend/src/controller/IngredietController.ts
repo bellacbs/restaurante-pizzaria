@@ -17,7 +17,7 @@ export class IngredientController{
 
     async createIngredient(req: Request, res: Response){
         try{
-            const name = req.body.name
+            const name = req.body.name.toLowerCase()
             const token = req.headers.authorization
 
             if(!token){

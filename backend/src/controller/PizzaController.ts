@@ -35,6 +35,10 @@ export class PizzaController{
             if(!input.name || !input.price || input.ingredients.length === 0){
                 throw new Error(`Os campos ${input.name}, ${input.price} e ${input.ingredients} são obrigatórios`)
             }
+
+            if(typeof input.ingredients !== "object"){
+                throw new Error("Os ingredientes devem ser informados dentro de um array")
+            }
     
             const result = await this.pizzaBusiness.createPizza(input, token)
     
