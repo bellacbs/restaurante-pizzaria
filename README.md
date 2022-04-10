@@ -15,7 +15,7 @@
 
 <h2 id="funciona">:heavy_check_mark: O que funciona</h2>
 
-<h3>Back-End</h3> - <a href="https://documenter.getpostman.com/view/16228159/UV5ZCwyq">Link Heroku</a>
+<h3>Back-End</h3> - <a href="https://documenter.getpostman.com/view/16228159/UV5ZCwyq">Link Documentação- Postman</a>
 * cadastrar Usuário;
 * Fazer Login de Usuário;
 * cadastrar pizza;
