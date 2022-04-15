@@ -12,6 +12,14 @@
 
 <p align="center">:rocket: Projeto desenvolvido conforme rodada de case da semana 24, projeto escolhido Pizzaria - Case de Full-Stack </p>
 
+<h2 id="tecnologias"> 🛠 Tecnologias </h2>
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+* NodeJS
+* TypeScript
+* MySQL
+
 
 <h2 id="funciona">:heavy_check_mark: O que funciona</h2>
 
@@ -33,6 +41,7 @@
 
 <h3>Back-End</h3>
 - [x] Testes
+- [x] Melhorar Documentação
 
 <h3>Front-End</h3>
 - [x] Não Iniciado
